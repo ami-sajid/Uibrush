@@ -1,0 +1,404 @@
+/* Common Css start */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+    color: #666;
+}
+
+a{
+    text-decoration: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-primery{
+    color: #39c9da;
+}
+
+.bg-primery{
+    background-color: #39c9da;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.col-3{
+    flex-basis: 25%;
+}
+
+.col-4{
+    flex-basis: 33%;
+}
+
+.col-6{
+    flex-basis: 50%;
+}
+
+
+.container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.pad-70{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+    background-color: #39c9da;
+    transition: .5s;
+}
+
+.btn:hover{
+    background-color: #148f9c;
+}
+
+.btn-lg{
+    padding: 17px 40px;
+}
+
+.heading{
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.heading-text{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.heading-des{
+    color: #b4b4b4;
+    line-height: 25px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+/* Common css end  */
+
+/* header section start  */
+
+header{
+    background: url('../img/top_bg.jpg');
+    height: 720px;
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.logo h1{
+    font-size: 36px;
+    cursor: pointer;
+    color: #39c9da;
+}
+
+.header-wrap{
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+.navbar{
+    list-style-type: none;
+    justify-content: space-between;
+    width: 550px;
+}
+
+.navbar li a{
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+}
+
+.navbar li a:hover{
+    color: #39c9da;
+    border-bottom: 2px solid #39c9da;
+}
+
+.banner-text{
+    font-size: 20px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.banner-text h1{
+    margin-bottom: 30px;
+}
+/* header section end  */
+
+/* About us section start */
+
+.about-us{
+    background-color: #fafafa;
+}
+
+.about-us-img img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.border-after{
+    padding-bottom: 20px;
+    position: relative;
+    color: #504f50;
+    font-size: 15px;
+}
+
+.border-after::after{
+    content: '';
+    width: 120px;
+    height: 3px;
+    background-color: #39c9da;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none;
+}
+
+.about-us-text p{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #b4b4b4;
+    padding-bottom: 79px;
+}
+/* About us section end */
+ /* potfollio section start   */
+.potfollio-section{
+    background-color: #f4f4f4;
+}
+
+
+.port-img{
+    position: relative;
+}
+
+.port-img img{
+    padding-bottom: 0;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+.overlay{
+    background-color: rgba(0, 0,0,.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    transition: .5s;
+}
+
+.port-img:hover .overlay{
+    height: 100%;
+}
+
+.port-btn{
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition: .3s;
+}
+
+.port-img:hover .port-btn{
+    visibility: visible;
+}
+
+.port-btn:hover{
+    background-color: #fff;
+    color: #222;
+}
+
+.port-text{
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 0;
+    border: 1px solid #e8e8e8;
+}
+
+.port-row{
+    margin-bottom: 50px;
+}
+
+ /* potfollio section end  */
+
+/* services section start  */
+
+.service-wrapper{
+    background-color: #fafafa;
+}
+
+
+.services-items{
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 15px;
+    transition: .6s;
+    margin-bottom: 25px;
+}
+
+.services-icon{
+    font-size: 36px;
+}
+
+.service-after{
+    font-weight: 1600;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.service-after::after{
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: #c2c2c2;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+}
+
+.service-text{
+    padding: 30px 0;
+    font-size: 15px;
+}
+
+.btn-black{
+    background-color: #4b4a4b;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+}
+
+.services:hover .services-items{
+    color: #fff;
+    background-color: #39c9da;
+}
+
+.services:hover .services-icon,
+.services:hover .service-after,
+.services:hover .service-text{
+    color: #fff;
+}
+
+.services:hover .service-after::after{
+    background-color: #5c5959;
+}
+
+.services:hover .btn-black{
+    background-color: #fff;
+    color: #323030;
+}
+/* services section end  */
+
+/* Contact Us section start */
+
+.contact-us-wrapper{
+    background-color: #f4f4f4;
+}
+
+.address{
+    font-weight: bold;
+}
+
+.contact-us-text p{
+    margin-top: 30px;
+    font-size: 18px;
+    color: #b4b4b4;
+    padding-bottom: 20px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-control, .form-text{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    height: 50px;
+    padding: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-text{
+    height: 260px;
+    resize: vertical;
+}
+
+.btn-submit{
+    font-weight: bolder;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    float: right;
+    cursor: pointer;
+}
+
+/* Contact Us section End */
+
+footer{
+    background-color: #39c9da;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
